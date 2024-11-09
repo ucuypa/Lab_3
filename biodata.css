@@ -1,0 +1,145 @@
+/* Global reset for consistent styling across browsers */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's width/height */
+}
+
+/* Base styles for the HTML and body */
+html,
+body {
+  height: 100%; /* Full viewport height */
+  margin: 0; /* No margin */
+  font-family: "Arial", sans-serif; /* Set default font */
+  background-color: #121212; /* Dark background for the body */
+  color: #fcfbfe; /* Light text color */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Body background settings */
+body {
+  background: url("image/background.jpg") no-repeat center center fixed; /* Fixed background image */
+  background-size: cover; /* Cover the entire background */
+  flex-grow: 1; /* Allow body to grow and fill space */
+}
+/* Navbar styling */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.856); 
+  padding: 1.2rem 0; /* Padding above and below */
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Spread items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+/* Logo styling */
+.logo {
+  width: 40px; /* Width of the logo */
+  height: 40px; /* Height of the logo */
+  background: url("image/logo.png") no-repeat center; /* Center the logo image */
+  background-size: contain; /* Make sure the logo image fits */
+  margin-left: 40px; /* Space on the left */
+}
+
+/* Menu styles */
+.menu ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+  display: flex; /* Flex layout for inline list items */
+  margin-right: 40px; /* Space on the right */
+}
+
+.menu ul li {
+  margin-right: 15px; /* Space between each menu item */
+}
+
+/* Styling for menu links */
+.menu ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #8b8b8b; /* Light text color */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s; /* Smooth transition for color */
+}
+
+/* Change link color on hover */
+.menu ul li a:hover {
+  color: #27bef5; /* Blue color when hovering */
+}
+
+/* Intro section styling */
+.intro {
+  flex-grow: 1; /* Allows the section to fill available space */
+  padding: 2rem; /* Adds padding for spacing */
+}
+
+/* Title styling */
+.title {
+  color: #444444; /* Orange color for titles */
+  font-family: "Arial", sans-serif; /* Font style for title */
+  font-size: 42px;
+  text-shadow: 1px 3px #dcdcdc;
+}
+
+/* Title2 styling (similar to .title but kept separate for flexibility) */
+.title2 {
+  font-family: "Arial", sans-serif;
+  color: #e9a21f;
+  padding: 1rem;
+}
+
+/* Styling for lore content */
+.lore {
+  font-family: "Lato", sans-serif; /* Sets a different font */
+  padding: 1rem; /* Adds padding for spacing */
+  width: 700px; /* Sets the width */
+  height: auto; /* Automatic height based on content */
+  font-size: 18px; /* Medium font size */
+  color: #ffffff; /* Light beige color */
+  background-color: #848484;
+  box-shadow: 0px 4px 10px #121212;
+  opacity: 0.96;
+  border-radius: 5px;
+}
+
+/* Link styling */
+.link {
+  text-decoration: none; /* No underline for links */
+}
+
+/* Lore2 styling (similar to .lore but kept separate for flexibility) */
+.lore2 {
+  font-family: "Lato", sans-serif;
+  padding: 1rem;
+  width: 700px;
+  height: auto;
+  font-size: 18px;
+  color: #ffffff; /* Light beige color */
+  background-color: #848484;
+  box-shadow: 0px 4px 10px #121212;
+  opacity: 0.96;
+  border-radius: 5px;
+}
+
+.lore span {
+  display: inline-block;
+  min-width: 150px; /* Adjust for desired spacing */
+}
+
+/* Styling for text and images */
+.content {
+  max-width: 100%;
+  text-align: right;
+  position: relative; /* Allows the image to be positioned within this container */
+}
+
+.image {
+  width: 20%;
+  max-width: 800px;
+  margin-bottom: 10px;
+  position: absolute; /* Enables free positioning */
+  top: 50px; /* Adjust the vertical position */
+  right: 100px; /* Adjust the horizontal position */
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px#121212;
+}

@@ -1,0 +1,97 @@
+/* Global reset for consistent styling across browsers */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's width/height */
+}
+
+/* Base styles for the HTML and body */
+html,
+body {
+  height: 100%; /* Full viewport height */
+  margin: 0; /* No margin */
+  font-family: "Arial", sans-serif; /* Set default font */
+  background-color: #121212; /* Dark background for the body */
+  color: #fcfbfe; /* Light text color */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Body background settings */
+body {
+  background: url("image/background.jpg") no-repeat center center fixed; /* Fixed background image */
+  background-size: cover; /* Cover the entire background */
+  flex-grow: 1; /* Allow body to grow and fill space */
+}
+/* Navbar styling */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.856); 
+  padding: 1.2rem 0; /* Padding above and below */
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Spread items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+/* Logo styling */
+.logo {
+  width: 40px; /* Width of the logo */
+  height: 40px; /* Height of the logo */
+  background: url("image/logo.png") no-repeat center; /* Center the logo image */
+  background-size: contain; /* Make sure the logo image fits */
+  margin-left: 40px; /* Space on the left */
+}
+
+/* Menu styles */
+.menu ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+  display: flex; /* Flex layout for inline list items */
+  margin-right: 40px; /* Space on the right */
+}
+
+.menu ul li {
+  margin-right: 15px; /* Space between each menu item */
+}
+
+/* Styling for menu links */
+.menu ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #8b8b8b; /* Light text color */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s; /* Smooth transition for color */
+}
+
+/* Change link color on hover */
+.menu ul li a:hover {
+  color: #27bef5; /* Blue color when hovering */
+}
+
+/* Intro section styling */
+.intro {
+  /* Center align text */
+  flex-grow: 1; /* Allow intro to fill available space */
+  padding: 2rem; /* Padding around content */
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  color: #ffffff; /* Orange color for titles */
+  margin-top: 10%;
+  margin-bottom: 1rem; /* Space below the title */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 76px;
+  text-shadow: 1px 9px #444444;
+}
+
+/* Lore section styling */
+.lore {
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: #121212;
+  max-width: 800px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the lore block */
+  padding: 1rem; /* Padding around text */
+  font-size: 16px;
+  text-align: center;
+}
